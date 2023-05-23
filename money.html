@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money Page</title>
+  </head>
+  <body>
+    <h1>this is the  money for the course and the people who paid</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Money</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(namey|length) %}
+        <tr>
+          <td>{{ namey[i] }}</td>
+          <td>{{ money[i] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
